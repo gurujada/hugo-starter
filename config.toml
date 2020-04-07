@@ -1,3 +1,26 @@
-baseURL = "http://example.org/"
+baseURL = "http://www.virinchi.me/"
+title = "Virinchi's Home"
+
 languageCode = "en-us"
-title = "My New Hugo Site"
+DefaultContentLanguage = "en"
+Language = "English"
+paginate = 12
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  author = "Chivukula Virinchi"
+  youtube = "https://www.youtube.com/channel/UCyMn2x_oVsYZJbz2ThMxsPA?view_as=subscriber"
+  facebook = "https://www.facebook.com/chivukula.virinchi.3"
+  og_image = "/images/og.png"
+  sitename = "Virinchi"
+  twitter = "@Virinchi_cv"
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1    

@@ -1,0 +1,24 @@
+<div class="aos-item container" data-aos="fade-up" data-aos-duration="700">
+    <div class="relatedPosts">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="blogitem__title sectionT text-center">You might also like</h2>
+                <div class="lineGeneral"></div>
+            </div>
+        </div>
+        {{ $related := .Site.RegularPages.Related . | first 3 }}
+        <div class="row">
+        {{ with $related }}
+        {{ range . }}
+            <div class="col-4">
+                <a class="grid__item" href="{{ .RelPermalink }}">
+                    <h2 class="title">{{ .Title}}</h2>
+                    <div class="lineGeneral"></div>
+                    <span class="category"></span>
+                </a>
+            </div>
+                {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
